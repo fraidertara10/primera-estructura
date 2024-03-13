@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components'
+
 interface Props {
 	title: string;
 }
@@ -20,9 +22,8 @@ const products = [
 
 ]
 ---
-
 <!doctype html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -32,9 +33,28 @@ const products = [
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="header" >
-			<div class="container header_info">
-				contenido clase
+		<div class="bg-zinc-800"> 
+			<div class="container flex items-center"  >
+				<img src="public/logo.webp" alt="" class="h-16">
+				<div class=" relative" >
+
+				<input  placeholder="buscar" class="h-10 rounded-full pl-4 pr-14 outline-none">
+				<div class="bg-zinc-800 right-2 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2" >
+				<Icon name="mdi:search" class="size-5 h-6"/>
+				</div>
+				
+				</div>
+				<div class="text-white flex items-center">
+				<Icon name="mdi:qrcode-scan"  class="ml-6 mr-3 size-8" />
+				<p class="leading-2 ">descarga la app <br> de AlinExpress</p>
+				
+				</div>
+			
+				<div class="text-white flex items-center ">
+				<Icon name="flagpack:co" class="ml-6 mr-3 size-8"  />
+					<p>es/ <br> <strong>cop</strong></p>
+					
+				</div>
 			</div>
 		</div>
 		<div class="container banner">
@@ -86,27 +106,17 @@ const products = [
 		background-color: rgb(190, 177, 160);
 		
 	}
-	.header{
-		background-color: orange;
-	}
-	.header_info{
-		height: 80px;
-
-	}
+	
 	.banner{
 		height: 240px;
 		
 	}
 	
-	.container{
-		max-width: 1280px;
-		/* background: blue; */
-		margin: 0 auto;
-		
-	}
+	
 	.list_products{
 		display: flex;
-		height: 40px;
+		height: 80px;
+		
 		/* background-color: rgb(148, 25, 25); */
 	}
 	.list_products div{
@@ -120,6 +130,7 @@ const products = [
 		border: 1px solid gray;
 		border-radius: 5px;
 		margin-right: 4px;
+		background-color: red;
 	}
 	.categories{
 		height: 80px;
