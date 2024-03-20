@@ -34,11 +34,11 @@ const products = [
 	</head>
 	<body>
 		<div class="bg-zinc-800"> 
-			<div class="container flex items-center"  >
+			<div class="container flex items-center justify-around "  >
 				<img src="public/logo.webp" alt="" class="h-16">
 				<div class=" relative" >
 
-				<input  placeholder="buscar" class="h-10 rounded-full pl-4 pr-14 outline-none">
+				<input  placeholder="buscar" class="h-10 rounded-full pl-4 pr-14 outline-none w-100">
 				<div class="bg-zinc-800 right-2 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2" >
 				<Icon name="mdi:search" class="size-5 h-6"/>
 				</div>
@@ -55,7 +55,53 @@ const products = [
 					<p>es/ <br> <strong>cop</strong></p>
 					
 				</div>
+				<div class="text-white items-center flex ml-4">
+					<Icon name="mdi:account" class="size-8 ml-6 mr-3"/>
+					<p>¡Bienvenido <br> <strong>Identificate / Registrate</strong> </p>
+
+				</div>
+				<div class="text-white flex ml-4 items-center ">
+					<Icon name="mdi:local-grocery-store" class="size-8 ml-6 mr-3"/>
+					<p class="text-black">0 <br> <strong class="text-white">cesta</strong></p>
+
+				</div>
 			</div>
+			<nav class="items-center flex justify-around text-white">
+				<a href="#" class="items-center h-10 group flex relative text-lg rounded-full border-2 text-center px-4 text-white">
+					<Icon name="mdi:menu" />
+					Todas las categorias
+					<menu class="hidden group-hover:block left-0 top-7 w-full absolute bg-zinc-800">
+						<ul>
+							<li>opcion1</li>
+							<li>opcion2</li>
+							<li>opcion3</li>
+						</ul>
+					</menu>
+					
+				</a >
+				<a href="#" class="hover:bg-sky-800 p-4 " >
+					NN
+				</a>
+				<a href="#" class="hover:bg-sky-800 p-4 ">
+					Superventas
+				</a>
+				<a href="#" class="hover:bg-sky-800 p-4 ">
+					mejores ventas
+				</a>
+				<a href="#" class="hover:bg-sky-800 p-4 " >
+					hojar y jardin
+				</a>
+				<a href="#" class="hover:bg-sky-800 p-4 ">
+					cabello y pelucas
+				</a>
+				<a href="#" class="hover:bg-sky-800 p-4 ">
+					Moda hombre
+				</a>
+				<a href="#" class="hover:bg-sky-800 p-4 ">
+					Acessorios
+				</a>
+				
+			</nav>
 		</div>
 		<div class="container banner">
 			banner
